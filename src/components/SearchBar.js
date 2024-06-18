@@ -8,12 +8,13 @@ const SearchBar = () => {
     const dispatch = useDispatch();
 
     const handleSearch = () => {
-        if (city.trim() === '') {
-            setCity('New York'); // Set default city if input is empty
-        }
         dispatch(fetchWeather(city));
         dispatch(fetchNews());
     };
+    if (city=== '') {
+        dispatch(fetchWeather("New York"));
+        dispatch(fetchNews());
+    }
 
     return (
         <div>
