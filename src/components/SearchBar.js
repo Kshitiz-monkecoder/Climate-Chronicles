@@ -36,15 +36,15 @@ const SearchBar = () => {
                 onClick={handleSearch}
                 style={{
                     padding: '10px 20px',
-                    fontSize: '16px',
-                    backgroundColor: '#8faff5',
-                    fontWeight: '400',
-                    color: '#5b8af0',
-                    border: '1px solid #4CAF50',
-                    borderRadius: '4px',
-                    cursor: 'pointer',
-                    marginLeft: '10px',
-                    outline: 'none'
+                fontSize: '16px',
+                backgroundColor: '##8faff5',
+                fontWeight : 400,
+                color: '#5b8af0',
+                border: '1px solid #4CAF50',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                marginLeft: '10px',
+                outline: 'none'
                 }}
             >
                 Search
