@@ -9,7 +9,7 @@ const WeatherInfo = ({ maxWidth }) => {
     const { data, loading, error } = useSelector((state) => state.weather);
 
     if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
+    if (error) return <p>City not Found, Please Try Again!</p>;
     if (!data) return null;
 
     const TempInCelsius = (data.main.temp - 273).toFixed(2);

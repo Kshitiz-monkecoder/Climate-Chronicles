@@ -12,6 +12,7 @@ const NewsArticles = () => {
     const { articles, loading, error } = useSelector((state) => state.news);
 
     if (loading) return <p>Loading...</p>;
+    if (error === 'Articles Not Found') return <p>Articles Not Found</p>;
     if (error) return <p>Error: {error}</p>;
     if (!articles.length) return <p>No news articles found</p>;
 
@@ -68,7 +69,6 @@ const NewsArticles = () => {
                                             boxShadow: 50,
                                             color: "white",
                                             backgroundColor: "#2563eb"
-
                                         }
                                     }}
                                 >
